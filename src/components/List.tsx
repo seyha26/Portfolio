@@ -9,7 +9,7 @@ interface ListProps {
 const List = ({ link, title, className }: ListProps) => {
   return (
     <>
-      <li>
+      <li className="border-b border-gray-300 w-full text-center">
         <Link className={className} to={`/${link}`}>
           {title}
         </Link>

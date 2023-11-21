@@ -9,8 +9,18 @@ body,
 :root {
     height: 100%;
     font-family: "Poppins";
+    background-color: #3aafa9;
+    color: #15252a;
+    scroll-behavior: smooth;
 }
 
-body {
-    position: relative;
+nav li>* {
+    color: #feffff;
+    font-weight: 100;
+    font-size: 1.1rem;
+    transition: all .3s;
+}
+
+nav li>*:hover {
+    color: #def2f1;
 }
