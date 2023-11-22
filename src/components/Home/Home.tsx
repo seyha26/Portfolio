@@ -1,4 +1,4 @@
-import Contianer from "../Contianer";
+import Contianer from "../Container";
 import Button from "../Button";
 import { useState } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";

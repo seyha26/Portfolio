@@ -5,9 +5,9 @@ interface ProjectCarProps {
 
 export const ProjectCard = ({ imgUrl, title }: ProjectCarProps) => {
   return (
-    <div className="rounded-md shadow-md border-[#000] border-[5px] flex cursor-pointer justify-center items-center flex-col overflow-hidden">
+    <div className="shadow-md flex cursor-pointer justify-center items-center flex-col overflow-hidden">
       <img
-        className="hover:scale-105 transition duration-300"
+        className="hover:scale-[1.02] transition-all ease-in duration-300"
         src={imgUrl}
         alt={title}
       />

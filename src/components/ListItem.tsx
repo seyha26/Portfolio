@@ -1,12 +1,13 @@
 interface ListItemPros {
   isMobileScreen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ListItem = ({ isMobileScreen }: ListItemPros) => {
+const ListItem = ({ isMobileScreen, setIsOpen }: ListItemPros) => {
   console.log(isMobileScreen);
   return (
     <>
-      <li className="flex items-center">
+      <li className="flex items-center" onClick={() => setIsOpen(false)}>
         <a
           className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
             isMobileScreen ? "hover:bg-[#3e9f99]" : ""
@@ -16,7 +17,7 @@ const ListItem = ({ isMobileScreen }: ListItemPros) => {
           Home
         </a>
       </li>
-      <li className="flex items-center">
+      <li className="flex items-center" onClick={() => setIsOpen(false)}>
         <a
           className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
             isMobileScreen ? "hover:bg-[#3e9f99]" : ""
@@ -26,7 +27,7 @@ const ListItem = ({ isMobileScreen }: ListItemPros) => {
           About
         </a>
       </li>
-      <li className="flex items-center">
+      <li className="flex items-center" onClick={() => setIsOpen(false)}>
         <a
           className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
             isMobileScreen ? "hover:bg-[#3e9f99]" : ""
@@ -36,7 +37,7 @@ const ListItem = ({ isMobileScreen }: ListItemPros) => {
           Porjects
         </a>
       </li>
-      <li className="flex items-center">
+      <li className="flex items-center" onClick={() => setIsOpen(false)}>
         <a
           className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
             isMobileScreen ? "hover:bg-[#3e9f99]" : ""

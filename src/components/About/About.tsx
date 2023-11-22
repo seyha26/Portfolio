@@ -1,4 +1,4 @@
-import Contianer from "../Contianer";
+import Contianer from "../Container";
 import profile from "../../assets/images/profile.jpg";
 import Button from "../Button";
 
@@ -7,12 +7,12 @@ const About = () => {
     <section className="bg-[#def2f1]" id="about">
       <Contianer className="">
         <div className="">
-          <div className="flex w-full justify-between flex-col md:flex-row items-center mt-7">
-            <div className="w-full">
-              <h1 className="text-4xl font-bold text-[#2b7a78] uppercase">
+          <div className="flex w-full justify-between flex-col md:flex-row items-center mt-7 gap-4">
+            <div className="w-full text-center md:text-left flex flex-col items-center md:items-start">
+              <h1 className="text-4xl font-bold  text-[#2b7a78] uppercase">
                 About Me
               </h1>
-              <p className="text-xl text-neutral-600 mt-6 mb-3 max-w-[440px] text-justify">
+              <p className="text-xl text-neutral-600 mt-6 mb-3  w-full text-center md:text-justify">
                 My name is Chheng Seyha. I am a
                 <span className="text-[#2b7a78]"> Frontend Developer</span>. I
                 finished my Associate Degree in Don Bosco Technical School, Kep.
@@ -26,7 +26,7 @@ const About = () => {
                 onClick={() => {}}
               />
             </div>
-            <div className="w-full flex justify-end">
+            <div className="w-full flex justify-center md:justify-end mt-4 md:mt-0">
               <img className="w-[400px]" src={profile} alt="" />
             </div>
           </div>

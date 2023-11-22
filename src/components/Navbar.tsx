@@ -60,14 +60,21 @@ const Navbar = () => {
         <ul
           className={`items-center gap-7 md:flex ${
             isOpen
-              ? "block absolute top-[70px] bg-[#419792] right-0 w-screen left-0"
+              ? "block absolute top-[70px] bg-[#419792] transition duration-300 right-0 w-screen left-0"
               : "hidden"
           }`}
         >
-          <ListItem isMobileScreen={isMobileScreen} />
+          <ListItem isMobileScreen={isMobileScreen} setIsOpen={setIsOpen} />
         </ul>
-        <div className="block md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          <Icon icon="charm:menu-hamburger" fontSize={28} color="#feffff" />
+        <div
+          className="block md:hidden cursor-pointer"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? (
+            <Icon icon="pajamas:close" fontSize={28} color="#feffff" />
+          ) : (
+            <Icon icon="charm:menu-hamburger" fontSize={28} color="#feffff" />
+          )}
         </div>
       </nav>
     </header>
