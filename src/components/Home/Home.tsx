@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <section id="home">
       <Contianer className="flex justify-center gap-3 flex-col items-center h-screen relative">
-        <div className="text-3xl mb-10 w-[400px] font-[500] border-r-[10px] border-b-[10px] border-[#def2f1] pb-6 pr-10">
+        <div className="text-3xl mb-10 max-w-[400px] font-[500] border-r-[10px] border-b-[10px] border-[#def2f1] pb-6 pr-10">
           <h1 className="md:text-5xl font-semibold uppercase">Hi there!</h1>
           <h1 className="font-bold text-5xl my-4">
             I'M <span className="text-[#feffff] ">CHHENG SEYHA</span>

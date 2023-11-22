@@ -1,17 +1,50 @@
-const ListItem = () => {
+interface ListItemPros {
+  isMobileScreen: boolean;
+}
+
+const ListItem = ({ isMobileScreen }: ListItemPros) => {
+  console.log(isMobileScreen);
   return (
     <>
-      <li>
-        <a href="#home">Home</a>
+      <li className="flex items-center">
+        <a
+          className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
+            isMobileScreen ? "hover:bg-[#3e9f99]" : ""
+          }  block`}
+          href="#home"
+        >
+          Home
+        </a>
       </li>
-      <li>
-        <a href="#about">About</a>
+      <li className="flex items-center">
+        <a
+          className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
+            isMobileScreen ? "hover:bg-[#3e9f99]" : ""
+          }  block`}
+          href="#about"
+        >
+          About
+        </a>
       </li>
-      <li>
-        <a href="#projects">Porjects</a>
+      <li className="flex items-center">
+        <a
+          className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
+            isMobileScreen ? "hover:bg-[#3e9f99]" : ""
+          }  block`}
+          href="#projects"
+        >
+          Porjects
+        </a>
       </li>
-      <li>
-        <a href="#contact">Contact</a>
+      <li className="flex items-center">
+        <a
+          className={`text-[1rem] lg:text-lg p-4 w-full text-center ${
+            isMobileScreen ? "hover:bg-[#3e9f99]" : ""
+          }  block`}
+          href="#contact"
+        >
+          Contact
+        </a>
       </li>
     </>
   );

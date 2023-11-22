@@ -5,11 +5,12 @@ interface ProjectCarProps {
 
 export const ProjectCard = ({ imgUrl, title }: ProjectCarProps) => {
   return (
-    <div className="p-5  flex justify-center items-center flex-col">
-      <div className="shadow-xl rounded md">
-        <img className="rounded-md" src={imgUrl} alt={title} />
-      </div>
-      {/* <span className="mt-10">{title}</span> */}
+    <div className="rounded-md shadow-md border-[#000] border-[5px] flex cursor-pointer justify-center items-center flex-col overflow-hidden">
+      <img
+        className="hover:scale-105 transition duration-300"
+        src={imgUrl}
+        alt={title}
+      />
     </div>
   );
 };
