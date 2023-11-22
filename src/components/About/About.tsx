@@ -1,5 +1,5 @@
 import Contianer from "../Container";
-import profile from "../../assets/images/profile.jpg";
+import profile from "../../assets/images/profile1.jpg";
 import Button from "../Button";
 
 const About = () => {
@@ -26,8 +26,14 @@ const About = () => {
                 onClick={() => {}}
               />
             </div>
-            <div className="w-full flex justify-center md:justify-end mt-4 md:mt-0">
-              <img className="w-[400px]" src={profile} alt="" />
+            <div className="w-full flex justify-center md:justify-end mt-4 md:mt-0 ">
+              <div className="overflow-hidden">
+                <img
+                  className="w-[400px] rotate-y-180 hover:scale-[1.1] transition duration-500"
+                  src={profile}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>

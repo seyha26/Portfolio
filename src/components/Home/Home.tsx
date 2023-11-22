@@ -35,18 +35,19 @@ const Home = () => {
             onClick={handleDownload}
           />
         </div>
-        <div className=" flex gap-5 absolute bottom-20">
-          <Icon
-            icon="bxl:instagram-alt"
-            style={{
-              color:
-                "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
-            }}
-            fontSize={40}
-          />
-          <Icon icon="bxl:facebook-square" fontSize={40} />
-          <Icon icon="bxl:linkedin-square" fontSize={40} />
-          <Icon icon="bxl:github" fontSize={40} />
+        <div className=" flex gap-5 absolute bottom-20 social-icons">
+          <a href="https://www.instagram.com/">
+            <Icon icon="bxl:instagram-alt" fontSize={40} />
+          </a>
+          <a href="https://www.facebook.com/">
+            <Icon icon="bxl:facebook-square" fontSize={40} />
+          </a>
+          <a href="https://www.linkedin.com/">
+            <Icon icon="bxl:linkedin-square" fontSize={40} />
+          </a>
+          <a href="https://www.github.com/">
+            <Icon icon="bxl:github" fontSize={40} />
+          </a>
         </div>
       </Contianer>
     </section>
