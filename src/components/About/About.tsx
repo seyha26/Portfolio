@@ -17,8 +17,7 @@ const About = () => {
                 <span className="text-[#2b7a78]"> Frontend Developer</span>. I
                 finished my Associate Degree in Don Bosco Technical School, Kep.
                 I finished my internship in Loma Technology as a Front end
-                Developer. I'm free now if You're interest with me You can
-                contact me.
+                Developer.
               </p>
               <Button
                 className="bg-[#3aafa9] text-[#ffff] hover:shadow-md hover:bg-[#2b7a78] hover:text-gray-100"
@@ -38,7 +37,6 @@ const About = () => {
           </div>
         </div>
       </Contianer>
-      ;
     </section>
   );
 };

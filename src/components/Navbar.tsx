@@ -43,14 +43,14 @@ const Navbar = () => {
 
   return (
     <header
-      className={`backdrop-blur-lg fixed w-full top-0 transition z-20 ${
-        isScrolling ? "shadow-sm bg-[#2b7a78]/40" : "shadow-none"
+      className={`backdrop-blur-lg fixed w-full top-0 transition z-50 bg-[#56c4c4] ${
+        isScrolling ? "shadow-md " : "shadow-none"
       }`}
     >
       <nav className=" relative max-w-[1300px] flex md:px-5 px-4 mx-auto items-center justify-between h-[70px] md:h-[100px]">
         <div>
           <Link
-            className="text-xl font-bold flex items-center text-white uppercase"
+            className="text-3xl font-bold flex items-center text-white uppercase"
             to="/"
           >
             Seyha
@@ -58,10 +58,10 @@ const Navbar = () => {
           </Link>
         </div>
         <ul
-          className={`items-center gap-7 md:flex ${
+          className={`items-center overflow-hidden md:h-auto h-0 gap-7 md:flex ${
             isOpen
-              ? "block absolute top-[70px] bg-[#419792] transition duration-300 right-0 w-screen left-0"
-              : "hidden"
+              ? "block absolute top-[70px] h-auto bg-[#419792] duration-[500ms] w-screen left-0"
+              : ""
           }`}
         >
           <ListItem isMobileScreen={isMobileScreen} setIsOpen={setIsOpen} />

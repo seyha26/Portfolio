@@ -23,14 +23,13 @@ const Home = () => {
             I'M <span className="text-[#feffff] ">CHHENG SEYHA</span>
           </h1>
           <h2 className="text-xl mb-4 ">
-            I am a Front-End Developer. I really enjoy with this Job. I have
-            done many project.
+            I am a Front-End Developer. I love coding.
           </h2>
           <Button
             className=" bg-[#2b7a78] hover:shadow-md hover:bg-[#def2f1] hover:text-[#2b7a78] text-[#def2f1]"
             isLoading={isLoading}
             success={success}
-            label="Download Resume"
+            label="Download CV"
             icon={<Icon icon="line-md:download-loop" fontSize={35} />}
             onClick={handleDownload}
           />
