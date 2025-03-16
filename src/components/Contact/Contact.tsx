@@ -21,8 +21,9 @@ const Contact = () => {
           </div>
           <div className="flex justify-end w-full">
             <div className="flex flex-col w-full">
-              <h1 className="text-3xl uppercase text-center md:text-left font-bold text-[#15252a] ">
+              <h1 className="relative self-start text-3xl uppercase text-center md:text-left font-bold text-[#15252a] ">
                 Contact Me
+                <span className="absolute rounded-sm w-[80%] h-[4px] bg-teal-500 bottom-[-5px] left-0"></span>
               </h1>
               <form className="flex mt-7 flex-col gap-2">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
