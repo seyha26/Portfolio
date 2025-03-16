@@ -12,11 +12,11 @@ const Contact = () => {
             </div>
             <div className="my-4">
               <p>Email Address</p>
-              <span className="text-gray-700">seyhachheng@gmail.com</span>
+              <span className="text-gray-700">seyhachheng26@gmail.com</span>
             </div>
             <div>
               <p>Phone Number</p>
-              <span className="text-gray-700">+855 886-764-971</span>
+              <span className="text-gray-700">+855 967-422-058</span>
             </div>
           </div>
           <div className="flex justify-end w-full">
