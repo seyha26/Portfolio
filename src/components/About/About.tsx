@@ -1,5 +1,5 @@
 import Contianer from "../Container";
-import profile from "../../assets/images/profile2.jpeg";
+import prifle_img from "../../assets/images/profile2.jpeg";
 import Button from "../Button";
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
               <div className="overflow-hidden">
                 <img
                   className="w-[400px] rotate-y-180 hover:scale-[1.1] transition duration-500"
-                  src={profile}
+                  src={prifle_img}
                   alt=""
                 />
               </div>
